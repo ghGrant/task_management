@@ -10,13 +10,14 @@ use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\Billing;
 use App\Http\Livewire\Profile;
 use App\Http\Livewire\Tables;
+use App\Http\Livewire\TasksPage;
 use App\Http\Livewire\StaticSignIn;
 use App\Http\Livewire\StaticSignUp;
 use App\Http\Livewire\Rtl;
 
 use App\Http\Livewire\LaravelExamples\UserProfile;
 use App\Http\Livewire\LaravelExamples\UserManagement;
-
+use App\Http\Livewire\TaskCategories;
 use Illuminate\Http\Request;
 
 /*
@@ -51,5 +52,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/rtl', Rtl::class)->name('rtl');
     Route::get('/laravel-user-profile', UserProfile::class)->name('user-profile');
     Route::get('/laravel-user-management', UserManagement::class)->name('user-management');
+
+    Route::get('tasks-dashboard', TasksPage::class)->name('tasks-dashboard');
+    Route::get('tasks-categories', TaskCategories::class)->name('tasks-categories');
 });
 
