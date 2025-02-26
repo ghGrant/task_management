@@ -13,7 +13,8 @@
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.6",
         "livewire/livewire": "^3.0",
-        "rappasoft/laravel-livewire-tables": "^3.6"
+        "rappasoft/laravel-livewire-tables": "^3.6",
+        "spatie/laravel-permission": "*"
     },
     "require-dev": {
         "spatie/laravel-ignition": "^2.0",

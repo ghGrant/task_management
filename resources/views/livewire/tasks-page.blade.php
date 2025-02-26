@@ -23,10 +23,10 @@
                         <livewire:TasksTable />
 
                         <div class="d-flex justify-content-end mt-3">
-                            <button class="btn btn-round bg-gradient-danger" wire:click="$dispatch('deleteSelected')">
+                            <button class="btn btn-primary bg-gradient-danger" wire:click="$dispatch('deleteSelected')">
                                 Delete Tasks
-                            </button>
-                            <button class="btn btn-round bg-gradient-success me-2" wire:click="$dispatch('processSelected')">
+                            </button><br>
+                            <button class="btn btn-primary bg-gradient-success me-2" wire:click="$dispatch('processSelected')">
                                 Complete Tasks
                             </button>
                         </div>

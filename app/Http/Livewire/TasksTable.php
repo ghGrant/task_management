@@ -92,7 +92,9 @@ class TasksTable extends DataTableComponent
 
     public function builder(): Builder
     {
-        return TasksPageModel::query()->with('category');
+        return TasksPageModel::query()
+            ->with('category')
+            ->where('status', '!=', 'DELETED');;
     }
 
     public function category()
@@ -153,7 +155,6 @@ class TasksTable extends DataTableComponent
                     'options' => \App\Models\TaskCategoriesModel::select('id', 'category')->get(),
                     'optionLabel' => 'category'
                 ])),
-
 
 
             Column::make('Status', 'status')

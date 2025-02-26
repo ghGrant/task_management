@@ -2,8 +2,8 @@
     <div class="row">
         <div class="col-md-2">
             <div class="form-group">
-                <label>Task Category No.</label>
-                <input type="text" class="form-control" value="TC-{{ $taskNo }}"
+                <label>Task No.</label>
+                <input type="text" class="form-control" value="TASK-{{ $taskNo }}"
                     disabled>
             </div>
         </div>
